@@ -1,11 +1,9 @@
 document.getElementById('button-player').addEventListener('click', function () {
-    const depositField = document.getElementById('cost');
-    const newDepositAmountString = depositField.value;
-    const newDepositAmount = parseFloat(newDepositAmountString);
-
-    depositField.value = '';
-
-    if (isNaN(newDepositAmount)) {
+    const costField = document.getElementById('cost');
+    const newCostAmountString = costField.value;
+    const newCostAmount = parseFloat(newCostAmountString);
+    costField.value = '';
+    if (isNaN(newCostAmount)) {
         alert('Please Provide a Valid Number')
         return;
     }
@@ -13,10 +11,9 @@ document.getElementById('button-player').addEventListener('click', function () {
         alert('Please Enter Five Players')
         return;
     }
-
-    depositTotalElement = document.getElementById('price-field');
-    const currentDepositTotal = 5 * newDepositAmount;
-    depositTotalElement.innerText = currentDepositTotal;
+    CostTotalElement = document.getElementById('price-field');
+    const currentCostTotal = 5 * newCostAmount;
+    CostTotalElement.innerText = currentCostTotal;
 
 })
 const price = [0];

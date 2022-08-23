@@ -1,9 +1,10 @@
 const cart = [];
 // players-cart
-function addToCart() {
+
+function displayplayer() {
     const cartContainer = document.getElementById("players-cart");
     if ((cart.length > 5)) {
-        alert("You can't add more than 5 Players")
+        alert("You can't Select more than 5 players")
         return;
     }
     cartContainer.textContent = '';
@@ -16,9 +17,9 @@ function addToCart() {
         cartContainer.appendChild(tr);
     }
     const tr = document.createElement('tr');
+
     cartContainer.appendChild(tr);
 }
-
 function addToCart(element) {
     const playerName = element.parentNode.parentNode.children[0].innerText;
     const player = {
@@ -28,5 +29,3 @@ function addToCart(element) {
     console.log(player)
     displayplayer();
 }
-
-
