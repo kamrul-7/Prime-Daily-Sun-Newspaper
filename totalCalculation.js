@@ -1,11 +1,11 @@
 
 document.getElementById('button-calculate').addEventListener('click', function () {
-    const depositField = document.getElementById('manager-cost');
-    const newDepositAmountString = depositField.value;
-    const newDepositAmount = parseFloat(newDepositAmountString);
-    depositField.value = '';
+    const expensesField = document.getElementById('manager-cost');
+    const newExpensesAmountString = expensesField.value;
+    const newExpensesAmount = parseFloat(newExpensesAmountString);
+    expensesField.value = '';
 
-    if (isNaN(newDepositAmount)) {
+    if (isNaN(newExpensesAmount)) {
         alert('Please Provide a Valid Number')
         return;
     }
@@ -15,7 +15,7 @@ document.getElementById('button-calculate').addEventListener('click', function (
 
     coachField.value = '';
 
-    if (isNaN(newDepositAmount)) {
+    if (isNaN(newcoachAmount)) {
         alert('Please Provide a Valid Number')
         return;
     }
@@ -27,7 +27,6 @@ document.getElementById('button-calculate').addEventListener('click', function (
     const balanceTotalElement = document.getElementById('total-cost');
     const previousBalanceTotalString = balanceTotalElement.innerText;
     const previousBalanceTotal = parseFloat(previousBalanceTotalString);
-    const currentBalanceTotals = newDepositAmount + newcoachAmount + newPlayerAmount;
+    const currentBalanceTotals = newExpensesAmount + newcoachAmount + newPlayerAmount;
     balanceTotalElement.innerText = currentBalanceTotals;
 })
-
