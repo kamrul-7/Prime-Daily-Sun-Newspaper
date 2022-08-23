@@ -13,6 +13,7 @@ document.getElementById('button-player').addEventListener('click', function () {
         alert('Please Enter Five Players')
         return;
     }
+
     depositTotalElement = document.getElementById('price-field');
     const currentDepositTotal = 5 * newDepositAmount;
     depositTotalElement.innerText = currentDepositTotal;
