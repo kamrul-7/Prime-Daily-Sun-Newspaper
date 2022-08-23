@@ -20,12 +20,13 @@ function displayplayer() {
 
     cartContainer.appendChild(tr);
 }
-function addToCart(element) {
+function player(element) {
+    element.disabled = true;
     const playerName = element.parentNode.parentNode.children[0].innerText;
     const player = {
         playerName: playerName,
     }
     cart.push(player);
-    console.log(player)
     displayplayer();
 }
+
