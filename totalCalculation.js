@@ -4,7 +4,6 @@ document.getElementById('button-calculate').addEventListener('click', function (
     const newExpensesAmountString = expensesField.value;
     const newExpensesAmount = parseFloat(newExpensesAmountString);
     expensesField.value = '';
-
     if (isNaN(newExpensesAmount)) {
         alert('Please Provide a Valid Number')
         return;
@@ -12,9 +11,7 @@ document.getElementById('button-calculate').addEventListener('click', function (
     const coachField = document.getElementById('coach-cost');
     const newcoachAmountString = coachField.value;
     const newcoachAmount = parseFloat(newcoachAmountString);
-
     coachField.value = '';
-
     if (isNaN(newcoachAmount)) {
         alert('Please Provide a Valid Number')
         return;

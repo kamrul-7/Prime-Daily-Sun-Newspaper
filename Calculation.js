@@ -14,7 +14,6 @@ document.getElementById('button-player').addEventListener('click', function () {
     CostTotalElement = document.getElementById('price-field');
     const currentCostTotal = 5 * newCostAmount;
     CostTotalElement.innerText = currentCostTotal;
-
 })
 const price = [0];
 
