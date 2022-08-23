@@ -1,14 +1,216 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Some Players</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Berkshire Swash',
+                cursive;
+        }
+
+        header {
+            background-image: linear-gradient(1turn, #020f2a, rgba(2, 15, 42, 0));
+        }
+
+        #players-price {
+            margin-top: 20px;
+        }
+
+        #players {
+            height: 300px;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+
+        <div class="row text-white mb-5 w-100 ">
+            <div class="col">
+                <img src="images/Banner/messi.png" alt="">
+            </div>
+            <div class="col-6 mt-5">
+                <h1 class="fs-1 fw-bold text-danger">Let's Sign Some Players</h1>
+                <p class="mt-3">This is where you can build your original team by signing your favourite players and
+                    managers. When
+                    you are ready, put your team to test by taking part in various events or fight for promotion in the
+                    Division-based eFootball™ League.</p>
+            </div>
+            <div class="col mt-4">
+                <img src="images/Banner/pngwing.com (1).png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/player1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Leonel Messi</h5>
+                                <p class="card-text text-center ">118 goals .<span class="px-1 ">112
+                                        Assist</span></p>
+                                <div>
+                                    <button disable id="btn" class="btn bg-primary px-5 container text-white"
+                                        onclick="addToCart(this)">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/player2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Robert Lewandowski</h5>
+                                <p class="card-text text-center ">98 goals .<span class="px-1 ">103
+                                        Assist</span></p>
+                                <div>
+                                    <button id="btn" class="btn bg-primary px-5 container text-white"
+                                        onclick="addToCart(this)">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/player3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Antoine Griezmann</h5>
+                                <p class="card-text text-center ">74 goals .<span class="px-1 ">92
+                                        Assist</span></p>
+                                <div>
+                                    <button class="btn bg-primary px-5 container text-white" id="btn"
+                                        onclick="addToCart(this)">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/player4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Kylian Mbappé</h5>
+                                <p class="card-text text-center ">88 goals .<span class="px-1 ">97
+                                        Assist</span></p>
+                                <div>
+                                    <button class="btn bg-primary px-5 container text-white" id="btn"
+                                        onclick="addToCart(this)">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/player5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Neymar Jr</h5>
+                                <p class="card-text text-center ">82 goals .<span class="px-1 ">87
+                                        Assist</span></p>
+                                <div>
+                                    <button class="btn bg-primary px-5 container text-white" id="btn"
+                                        onclick="addToCart(this)">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/player6.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Cristiano Ronaldo</h5>
+                                <p class="card-text text-center ">112 goals .<span class="px-1 ">120
+                                        Assist</span></p>
+                                <div>
+                                    <button class="btn bg-primary px-5 container text-white" id="btn"
+                                        onclick="addToCart(this)">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/player7.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Mohamed Salah</h5>
+                                <p class="card-text text-center ">98 goals .<span class="px-1 ">109
+                                        Assist</span></p>
+                                <div>
+                                    <div>
+                                        <button class="btn bg-primary px-5 container text-white" id="btn"
+                                            onclick="addToCart(this)">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" id="players">
+                    <div class="card-body bg-dark">
+                        <table class="table text-white">
+                            <tr>
+                                <th id="player-count"></th>
+                                <th class="fs-5 text-danger">Selected Players-5</th>
+                            </tr>
+                            <tbody id="players-cart">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card text-bg-dark mt-5 container">
+                    <div class="card-header text-center pt-3">
+                        <h3>Budget</h3>
+                    </div>
+                    <div class="card-body d-flex flex-row">
+                        <label class="col-form-label">Per player</label>
+
+                        <input id="cost" type="text" class="w-50 ms-4">
+
+                    </div>
+                    <button class="btn bg-primary px-5 text-white mb-3" id="button-player">Calculate</button>
+                    <div class="mx-3">
+                        <p>player Expenses $ <span class="text-info ms-3" id="price-field">0</span></p>
+                    </div>
+                    <div class="card-body d-flex flex-row">
+                        <label for="inputPassword6" class="col-form-label">Manager</label>
+                        <input id="manager-cost" type="text" class="w-50 ms-4">
+                    </div>
+                    <div class="card-body d-flex flex-row">
+                        <label for="inputPassword6" class="col-form-label">Coach</label>
+                        <input id="coach-cost" type="text" class="w-50 ms-5">
+                    </div>
+                    <button class="btn bg-primary px-5 text-white mx-2 mb-3" id="button-calculate">Calculate
+                        Total</button>
+                    <div class="mx-5 fs-5 fw-semibold">
+                        <p>Total $<span class="text-danger text-center ms-3 " id="total-cost">0</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="/Addplayers.js"></script>
+    <script src="/Calculation.js"></script>
+    <script src="/totalCalculation.js"></script>
+
+
 
 </body>
 
